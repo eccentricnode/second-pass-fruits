@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-content>
+      <h3 mat-subheader>Fruits</h3>
+      <mat-list *ngIf="fruits.length; else elseBlock">
+        <mat-list-item *ngFor="let fruit of fruits" class="mat-list-option"
+          (click)="select(fruit)">
+          <h4 mat-line>{{fruit.name}}</h4>
+          <span mat-line>{{fruit.calories}}</span>
+          <button mat-mini-fab *ngIf="!readonly" (click)="remove(fruit);$event.stopImmediatePropagation();">
+            <mat-icon>clear</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+      <ng-template #elseBlock>
+        <mat-spinner mode="indeterminate"></mat-spinner>
+      </ng-template>
+    </mat-card-content>
+  </mat-card>

@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="list-grid">
+        <second-pass-fruits-list
+            [fruits]="fruits$ | async"
+            (selected)="selectFruit($event)"
+            (deleted)="removeFruit($event)">
+        </second-pass-fruits-list>
+    </div>
+
+    <div class="details-grid">
+        <second-pass-fruits-details
+            [fruit]="selectedFruit$ | async"
+            (submitted)="saveFruit($event)"
+            (cancelled)="reset($event)">
+        </second-pass-fruits-details>
+    </div>
+</div>
