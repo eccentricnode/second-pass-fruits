@@ -5,3 +5,11 @@ export interface Fruit {
     carbohydrates: number,
     sugar: number;
 }
+
+export const emptyFruit: Fruit = {
+    id: null,
+    name: '',
+    calories: '',
+    carbohydrates: null,
+    sugar: null,
+}
