@@ -27,7 +27,7 @@
             ],
             "styles": [
               {
-                "input": "apps/dashboard/src/_custom.theme.scss"
+                "input": "apps/dashboard/src/_custom-theme.scss"
               },
               "apps/dashboard/src/styles.scss"
             ],

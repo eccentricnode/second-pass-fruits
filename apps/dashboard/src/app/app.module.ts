@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { NxModule } from '@nrwl/angular';
 import { CoreDataModule } from '@second-pass/core-data';
 import { CoreStateModule } from '@second-pass/core-state';
 import { MaterialModule } from '@second-pass/material';
@@ -20,6 +21,7 @@ import { AppRoutingModule } from './routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NxModule.forRoot(),
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,

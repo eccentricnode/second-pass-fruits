@@ -2,3 +2,22 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-sidenav-container {
+    height: 100vh;
+    background: #424242;
+}
+
+.wrapper {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+    @media only screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

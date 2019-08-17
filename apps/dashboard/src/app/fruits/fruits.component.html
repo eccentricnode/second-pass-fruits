@@ -9,6 +9,7 @@
 
     <div class="details-grid">
         <second-pass-fruits-details
+            [group]="form"
             [fruit]="selectedFruit$ | async"
             (submitted)="saveFruit($event)"
             (cancelled)="reset($event)">
